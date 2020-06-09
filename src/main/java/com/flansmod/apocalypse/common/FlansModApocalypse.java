@@ -199,7 +199,8 @@ public class FlansModApocalypse
 	public void init(FMLInitializationEvent event)
 	{
 		proxy.init(event);
-		dimensionID = DimensionManager.getNextFreeDimId();
+		// dimensionID = DimensionManager.getNextFreeDimId(); // Sorry AE2 is dumb as hell 
+                dimensionID = 42069; /* ;) */
 		APOCALYPSE_DIM = DimensionType.register("Apocalypse", "_apocalypse", dimensionID, WorldProviderApocalypse.class, false);
 		DimensionManager.registerDimension(dimensionID, APOCALYPSE_DIM);
 		
